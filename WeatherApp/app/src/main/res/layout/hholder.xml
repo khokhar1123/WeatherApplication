@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="100dp"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/dData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/TData"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="TextView" />
+
+    <TextView
+        android:id="@+id/TeData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/DescData"
+        app:layout_constraintEnd_toEndOf="@+id/imageIcon"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/imageIcon"
+        app:layout_constraintTop_toBottomOf="@+id/imageIcon"
+        tools:text="TextView" />
+
+    <ImageView
+        android:id="@+id/imageIcon"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:contentDescription="iconw"
+        app:layout_constraintBottom_toTopOf="@+id/TeData"
+        app:layout_constraintEnd_toEndOf="@+id/TData"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/TData"
+        app:layout_constraintTop_toBottomOf="@+id/TData"
+        tools:ignore="ImageContrastCheck"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/TData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/imageIcon"
+        app:layout_constraintEnd_toEndOf="@+id/dData"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/dData"
+        app:layout_constraintTop_toBottomOf="@+id/dData"
+        tools:text="TextView" />
+
+    <TextView
+        android:id="@+id/DescData"
+        android:layout_width="75dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/TeData"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/TeData"
+        app:layout_constraintTop_toBottomOf="@+id/TeData"
+        tools:text="TextView" />
+</androidx.constraintlayout.widget.ConstraintLayout>
